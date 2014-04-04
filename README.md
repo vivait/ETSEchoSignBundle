@@ -57,7 +57,7 @@ Client service offer three wrappers to the most used methods:
 
 **To send a document:**
 ```
-$recipients = new RecipientInfoCollection('recipient@test.com');
+$recipients = new RecipientInfoCollection(array('recipient@test.com'));
 $fileCollections = new FileInfoCollection();
 $fileCollections->addFileInfo(new FileInfo('file.pdf', 'file.pdf'));
 $documentCreationInfo = new DocumentCreationInfo($recipients, 'Test document', $fileCollections);
